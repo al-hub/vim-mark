@@ -221,7 +221,7 @@ nnoremap <silent> <Plug>MarkSearchAnyNext     :<C-u>if ! mark#SearchAnyMark(0)<B
 nnoremap <silent> <Plug>MarkSearchAnyPrev     :<C-u>if ! mark#SearchAnyMark(1)<Bar>echoerr ingo#err#Get()<Bar>endif<CR>
 " When typed, [*#nN] open the fold at the search result, but inside a mapping or
 " :normal this must be done explicitly via 'zv'.
-nnoremap <silent> <Plug>MarkSearchNext          :<C-u>if ! mark#SearchNext(0)<Bar>execute 'normal!' v:count1 . '*zv'<Bar>endif<CR>
+nnoremap <silent> <Plug>MarkSearchNext          :<C-u>if ! mark#SearchNext(0)<Bar>execute 'normal!' v:count1 . '*``zv'<Bar>endif<CR>
 nnoremap <silent> <Plug>MarkSearchPrev          :<C-u>if ! mark#SearchNext(1)<Bar>execute 'normal!' v:count1 . '#zv'<Bar>endif<CR>
 nnoremap <silent> <Plug>MarkSearchOrCurNext     :<C-u>if ! mark#SearchNext(0,'mark#SearchCurrentMark')<Bar>execute 'normal!' v:count1 . '*zv'<Bar>endif<CR>
 nnoremap <silent> <Plug>MarkSearchOrCurPrev     :<C-u>if ! mark#SearchNext(1,'mark#SearchCurrentMark')<Bar>execute 'normal!' v:count1 . '#zv'<Bar>endif<CR>
