@@ -281,7 +281,7 @@ endif
 " No default mapping for <Plug>MarkToggle.
 
 if !hasmapto('<Plug>MarkSearchCurrentNext', 'n')
-	nmap <unique> <Leader>* <Plug>MarkSearchCurrentNext
+"	nmap <unique> <Leader>* <Plug>MarkSearchCurrentNext
 endif
 if !hasmapto('<Plug>MarkSearchCurrentPrev', 'n')
 	nmap <unique> <Leader># <Plug>MarkSearchCurrentPrev
